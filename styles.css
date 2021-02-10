@@ -15,6 +15,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -649,7 +650,11 @@ html {
 
 /* Watch Bands */
 
-.watch-bang-img {
+.watch-bands {
+    transition: margin-right 1s;
+}
+
+.watch-band-img {
     width: 35rem;
     height: 35rem;
     object-fit: contain; 
@@ -661,6 +666,7 @@ html {
 
 .watch-cases{
     flex-direction: column;
+    transition: margin-top 1s;
 }
 
 .watch-case-img {
@@ -677,8 +683,13 @@ html {
     position: absolute;
     width: 4rem;
     height: 4rem;
-    background-color: rgba(221, 221, 221, 0);
+    background-color: rgba(221, 221, 221, 0.4);
     border-radius: 5rem;
+}
+
+.hideControl {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .watch-control i {
@@ -733,3 +744,77 @@ html {
 
 
 /* End of Section 4 */
+
+/* Section 5 */
+
+.section-5 {
+    width: 100%;
+    height: 100vh;
+}
+/* Section 5 Content */
+.airpods {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    position: relative;
+}
+
+/* Section 5 Heading */
+
+.section-5-heading {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15rem;
+    font-weight: 300;
+    color: var(--white-color);
+    text-shadow: 0.1rem 0.1rem 0 #999;
+}
+
+/* End of Section 5 Heading*/
+
+/* Section 5 images */
+.airpods img{
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.airpods-img-2{
+    background-color: var(--primary-color);
+}
+
+/* End of Section 5 images */
+
+/* Section 5 Buttons */
+
+.airpods-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5rem;
+}
+
+.airpods-btn{
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    margin: 0 2rem;
+    border: none;
+    border-radius: .5rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.airpods-btn:last-child {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+/* End of Section 5 Buttons */
+
+/* End of Section 5 Content */
+
+/* End of Section 5 */
